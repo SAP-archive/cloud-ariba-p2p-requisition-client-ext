@@ -16,7 +16,7 @@ public class Requisition {
 	private String headerComment;
 	private String headerName;
 	private String originatingSystem;
-	private String originatingSystemId;
+	private String originatingSystemReferenceId;
 	private String passwordAdapter;
 	private String preparer;
 	private String requester;
@@ -88,12 +88,12 @@ public class Requisition {
 	}
 
 	/**
-	 * Returns originating system id
+	 * Returns originating system reference id
 	 *
 	 * @return originatingSystemId
 	 */
-	public String getOriginatingSystemId() {
-		return originatingSystemId;
+	public String getOriginatingSystemReferenceId() {
+		return originatingSystemReferenceId;
 	}
 
 	/**
@@ -221,12 +221,12 @@ public class Requisition {
 	}
 
 	/**
-	 * Sets originating system id
+	 * Sets originating system reference id
 	 *
-	 * @param originatingSystemId
+	 * @param originatingSystemReferenceId
 	 */
-	public Requisition originatingSystemId(String originatingSystemId) {
-		this.originatingSystemId = originatingSystemId;
+	public Requisition originatingSystemReferenceId(String originatingSystemReferenceId) {
+		this.originatingSystemReferenceId = originatingSystemReferenceId;
 		return this;
 	}
 

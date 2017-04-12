@@ -200,7 +200,7 @@ public class RequisitionSOAPClient {
 
 		addChildElementsWithValue(item, requisition.getHeaderName(), "Name");
 		addChildElementsWithValue(item, requisition.getOriginatingSystem(), "OriginatingSystem");
-		addChildElementsWithValue(item, requisition.getOriginatingSystemId(), "OriginatingSystemReferenceID");
+		addChildElementsWithValue(item, requisition.getOriginatingSystemReferenceId(), "OriginatingSystemReferenceID");
 
 		SOAPElement preparer = addChildElements(item, "Preparer");
 		addChildElementsWithValue(preparer, requisition.getPasswordAdapter(), "PasswordAdapter");
